@@ -1,4 +1,5 @@
 package Empresa;
+import java.io.File;
 
 public class Caballo extends Animal {
 	private String tipo;
@@ -28,11 +29,12 @@ public class Caballo extends Animal {
 		this.tipo=tipo;
 	}
 	
-	//Metodo de sonido
-		public void makeSound() {
-			
-		}
-		
+	 // Metodo para guardar el sonido referente al animal
+	  public void makeSound() {
+		  File sound= new File("C:\\Users\\AlfonsoLopez\\eclipse-workspace\\TareaEmpresa\\src\\Empresa\\caballo.WAV");
+		  super.PlaySound(sound);
+	  }
+	  
 	//Metodo para obtener la informacion del caballo
 	public String toString() {
 		datos= super.toString() 

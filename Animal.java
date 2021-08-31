@@ -1,5 +1,10 @@
 package Empresa;
 
+import java.io.File;
+
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
+
 public class Animal {
 	private String nombre;
 	private String genero;
@@ -51,4 +56,14 @@ public class Animal {
 	          +"Edad: "   +getEdad() +" años\n";
 		return datos;
 	}
+	
+	//Metodo para reproducir los sonidos de los animales
+	public void PlaySound(File sound) {
+		  try{Clip clip=AudioSystem.getClip();
+		  clip.open(AudioSystem.getAudioInputStream(sound));
+		  clip.start();
+		  Thread.sleep(clip.getMicrosecondLength()/1000);
+		  }catch(Exception e) {  
+	  			}
+	  }
 }

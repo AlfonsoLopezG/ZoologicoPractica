@@ -58,5 +58,11 @@ public static ArrayList<Animal> animales = new ArrayList<Animal>();
 		}
 		System.out.print("Animales en el zoologico: \n"+animales.toString());
 		System.out.print("Informacion del zoologico: \n" +empresas.toString());
+		//Sonido caballo
+		//baal.makeSound();
+		//Sonido elefante
+		//maria.makeSound();
+		//Sonido tigre
+		//feli.makeSound();
 	}
 }
