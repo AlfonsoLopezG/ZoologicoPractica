@@ -27,10 +27,16 @@ public class Gorila extends Animal{
 		this.peso=peso;
 	}
 	
+	//Metodo de sonido
+	public void makeSound() {
+		
+	}
+
+	
 	//Metodo para obtener los datos del gorila
 	public String toString() {
 		datos = super.toString()+
-				"Peso: " +getPeso() +"\n\n";
+				"Peso: " +getPeso() +".\n\n";
 		return datos;
 	}
 }

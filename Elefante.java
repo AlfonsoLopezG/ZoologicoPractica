@@ -1,5 +1,4 @@
 package Empresa;
-
 public class Elefante extends Animal{
 	private String datos;
 	private String tipo;
@@ -28,10 +27,15 @@ public class Elefante extends Animal{
 		this.tipo=tipo;
 	}
 	
+	//Metodo de sonido
+		public void makeSound() {
+			
+		}
+	
 	//Metodo toString para los datos del caballo
 	public String toString() {
 		datos= super.toString()+
-			   "Tipo " +getTipo() +"\n\n";
+			   "Tipo " +getTipo() +".\n\n";
 		return datos;
 	}
 

@@ -4,7 +4,7 @@ public class Animal {
 	private String nombre;
 	private String genero;
 	private int edad;
-	private String datos;
+	private String datos="";
 	
 	//Constructor
 	public Animal() {
@@ -48,7 +48,7 @@ public class Animal {
 	public String toString() {
 		datos+="Nombre: " +getNombre() +"\n" 
 	          +"Genero: " +getGenero() +"\n"
-	          +"Edad: "   +getEdad() +" años.\n";
+	          +"Edad: "   +getEdad() +" años\n";
 		return datos;
 	}
 }

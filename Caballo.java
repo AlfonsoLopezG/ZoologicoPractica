@@ -28,10 +28,15 @@ public class Caballo extends Animal {
 		this.tipo=tipo;
 	}
 	
+	//Metodo de sonido
+		public void makeSound() {
+			
+		}
+		
 	//Metodo para obtener la informacion del caballo
 	public String toString() {
 		datos= super.toString() 
-		       +"Tipo: " +this.getTipo() +"\n\n";
+		       +"Tipo: " +this.getTipo() +".\n\n";
 		return datos;
 	}
 

@@ -28,10 +28,15 @@ public class Delfin extends Animal {
 		this.tipo=tipo;
 	}
 	
+	//Metodo de sonido
+		public void makeSound() {
+			
+		}
+		
 	//Metodo para obtener los datos del animal
 	public String toString() {
 		datos=super.toString()+
-			  "Tipo: " +getTipo() +"\n\n";
+			  "Tipo: " +getTipo() +".\n\n";
 		return datos;
 	}
 }

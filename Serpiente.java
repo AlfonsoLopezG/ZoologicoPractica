@@ -27,11 +27,16 @@ public class Serpiente extends Animal{
 	public void setLongitud(float longitud) {
 		this.longitud=longitud;
 	}
+
+	//Metodo de sonido
+		public void makeSound() {
+			
+		}
 	
 	//Metodo para los datos de la serpiente
 	public String toString() {
 		datos = super.toString()+
-				"Longitud: " +getLongitud() +"\n\n";
+				"Longitud: " +getLongitud() +".\n\n";
 		return datos;
 	}
 

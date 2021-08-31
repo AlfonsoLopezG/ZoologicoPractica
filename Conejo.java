@@ -37,7 +37,7 @@ public class Conejo extends Animal{
 	//Metodo toString
 	public String toString() {
 		datos= super.toString() 
-	          +"Tipo: " +this.getTipo() +"\n\n";
+	          +"Tipo: " +this.getTipo() +".\n\n";
 		return datos;
 	}
 	

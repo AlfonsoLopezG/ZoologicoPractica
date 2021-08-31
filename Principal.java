@@ -14,10 +14,6 @@ public static ArrayList<Empresa> empresas=new ArrayList<Empresa>();
 public static ArrayList<Animal> animales = new ArrayList<Animal>();
 	public static void main(String[] args) {
 		
-		//Zologico
-		Zoologico Aventura=new Zoologico("Aventura", "11:00 am");
-		empresas.add(Aventura);
-	
 		//Animales
 		Caballo luis=new Caballo("Luis", "Macho", 2, "Pinto");
 		Caballo baal=new Caballo("Baal","Hembra",3,"Pura Sangre");
@@ -49,7 +45,18 @@ public static ArrayList<Animal> animales = new ArrayList<Animal>();
 		animales.add(feli);
 		animales.add(cobu);
 		
-		System.out.print(animales.toString());
-		
+
+		//Zologico
+		Zoologico Aventura=new Zoologico("Aventura","Calle Olmo",55, "11:00 am",animales.size());
+		empresas.add(Aventura);
+		//En caso de querer cambiar un dato a un animal
+		for(int i=0;i<animales.size();i++) {
+			if(animales.get(i).getNombre()=="Mona") {
+				animales.get(i).setNombre("Hola");
+				animales.get(i).setGenero("Macho");
+			}
+		}
+		System.out.print("Animales en el zoologico: \n"+animales.toString());
+		System.out.print("Informacion del zoologico: \n" +empresas.toString());
 	}
 }
